@@ -6,17 +6,16 @@
   Date created: 2018/10/5 下午2:41
 """
 
-from __future__ import absolute_import
-from __future__ import unicode_literals
-from __future__ import division
-from __future__ import print_function
+from __future__ import (absolute_import, division, print_function,
+                        unicode_literals)
 
 import math
+
 import torch
 import torch.nn as nn
-from torch.nn.parameter import Parameter
-from torch.nn.modules.module import Module
 import torch.nn.functional as F
+from torch.nn.modules.module import Module
+from torch.nn.parameter import Parameter
 
 
 class SpecialSpmmFunction(torch.autograd.Function):
